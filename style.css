@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow:hidden;
+    background:#87d4ff;
+    font-family:'Pretendard',sans-serif;
+}
+
+#game{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+#background{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+#clouds,
+#leaves,
+#bird,
+#squirrel{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+}
+
+#touch{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:40px;
+
+    transform:translateX(-50%);
+
+    background:#f6ddb1;
+
+    color:#4b3212;
+
+    padding:18px 42px;
+
+    border-radius:40px;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+    animation:pulse 2s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{transform:translateX(-50%) scale(1);}
+
+50%{transform:translateX(-50%) scale(1.05);}
+
+100%{transform:translateX(-50%) scale(1);}
+
+}
