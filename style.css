@@ -1,268 +1,67 @@
 /* ==========================
-   Library Forest v0.2
+   Library Forest Animation
 ========================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-
-    width:100%;
-    height:100%;
-
-    overflow:hidden;
-
-    background:#bfe8ff;
-
-    font-family:
-    "Pretendard",
-    "Noto Sans KR",
-    sans-serif;
-
-}
-
-#game{
-
-    position:relative;
-
-    width:100vw;
-    height:100vh;
-
-    overflow:hidden;
-
-}
-
-/* ==========================
-   배경
-========================== */
-
-#background{
-
-    position:absolute;
-
-    left:0;
-    top:0;
-
-    width:100%;
-    height:100%;
-
-    object-fit:cover;
-
-    z-index:1;
-
-}
-
-/* ==========================
-   하늘
-========================== */
-
-#sky{
-
-    position:absolute;
-
-    width:100%;
-    height:100%;
-
-    left:0;
-    top:0;
-
-    z-index:5;
-
-    pointer-events:none;
-
-}
-
-/* ==========================
-   구름
-========================== */
-
-.cloud{
-
-    position:absolute;
-
-    opacity:.85;
-
-}
-
-.cloud1{
-
-    width:260px;
-
-    top:70px;
-
-    left:-300px;
-
-    animation:
-
-    cloudMove1
-
-    35s linear infinite;
-
-}
-
-.cloud2{
-
-    width:180px;
-
-    top:160px;
-
-    left:-200px;
-
-    animation:
-
-    cloudMove2
-
-    50s linear infinite;
-
-}
-
-/* ==========================
-   터치 버튼
-========================== */
-
-#touchButton{
-
-    position:absolute;
-
-    left:50%;
-    bottom:55px;
-
-    transform:translateX(-50%);
-
-    z-index:30;
-
-    padding:
-
-    18px 36px;
-
-    border-radius:40px;
-
-    background:
-
-    rgba(255,255,255,.92);
-
-    color:#2c6e49;
-
-    font-size:26px;
-
-    font-weight:bold;
-
-    box-shadow:
-
-    0 8px 25px rgba(0,0,0,.18);
-
-    animation:
-
-    pulse
-
-    2.3s infinite;
-
-    cursor:pointer;
-
-    user-select:none;
-
-}
-
-/* ==========================
-   새
-========================== */
-
-#bird{
-
-    position:absolute;
-
-    z-index:15;
-
-}
-
-/* ==========================
-   다람쥐
-========================== */
-
-#squirrel{
-
-    position:absolute;
-
-    z-index:20;
-
-}
-
-/* ==========================
-   낙엽
-========================== */
-
-#leaves{
-
-    position:absolute;
-
-    z-index:10;
-
-}
-
-/* ==========================
-   애니메이션
-========================== */
-
-@keyframes pulse{
-
-0%{
-
-transform:
-translateX(-50%)
-scale(1);
-
-}
-
-50%{
-
-transform:
-translateX(-50%)
-scale(1.06);
-
-}
-
-100%{
-
-transform:
-translateX(-50%)
-scale(1);
-
-}
-
-}
+/* 구름 애니메이션 */
 
 @keyframes cloudMove1{
 
-0%{
+    0%{
+        left:-320px;
+    }
 
-left:-300px;
-
-}
-
-100%{
-
-left:110%;
-
-}
+    100%{
+        left:110%;
+    }
 
 }
 
 @keyframes cloudMove2{
 
-0%{
+    0%{
+        left:-250px;
+    }
 
-left:-220px;
+    100%{
+        left:110%;
+    }
+
+}
+
+/* 화면을 터치하세요 */
+
+@keyframes touchPulse{
+
+    0%{
+
+        transform:
+        translateX(-50%)
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+        translateX(-50%)
+        scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+        translateX(-50%)
+        scale(1);
+
+    }
 
 }
 
-100%{
+#touchButton{
 
-left:110%;
-
-}
+    animation:
+    touchPulse
+    2s ease-in-out infinite;
 
 }
