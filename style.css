@@ -176,17 +176,13 @@ body{
 @keyframes birdFly{
 
     0%{
-
-        left:110%;
+        left:-100px;
         top:120px;
-
     }
 
     100%{
-
-        left:-100px;
+        left:110%;
         top:80px;
-
     }
 
 }
