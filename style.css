@@ -108,3 +108,43 @@
     70s linear infinite;
 
 }
+/* ==========================
+   새
+========================== */
+
+@keyframes birdFly{
+
+    0%{
+
+        left:-100px;
+        top:120px;
+
+    }
+
+    100%{
+
+        left:110%;
+        top:80px;
+
+    }
+
+}
+
+#bird{
+
+    position:absolute;
+
+    width:60px;
+
+    left:-100px;
+    top:120px;
+
+    z-index:3;
+
+    pointer-events:none;
+
+    animation:
+    birdFly
+    15s linear infinite;
+
+}
