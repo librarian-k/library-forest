@@ -176,6 +176,8 @@ body{
 
     pointer-events:none;
 
+   transform:scaleX(-1);
+
     animation:
     birdFly
     15s linear infinite;
