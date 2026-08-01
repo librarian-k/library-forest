@@ -60,10 +60,13 @@
 
 #touchButton{
 
+    z-index:10;
+
     animation:
     touchPulse
     2s ease-in-out infinite;
 
+}
 }
 /* ==========================
    구름
