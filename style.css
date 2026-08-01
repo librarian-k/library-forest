@@ -141,6 +141,20 @@ body{
     70s linear infinite;
 
 }
+.cloud2{
+
+    top:110px;
+    left:-250px;
+
+    width:130px;
+
+    opacity:0.8;
+
+    animation:
+    cloudMove2
+    90s linear infinite;
+
+}
 /* ==========================
    새
 ========================== */
