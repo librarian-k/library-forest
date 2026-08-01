@@ -149,14 +149,14 @@ body{
 
     0%{
 
-        left:-100px;
+        left:110%;
         top:120px;
 
     }
 
     100%{
 
-        left:110%;
+        left:-100px;
         top:80px;
 
     }
@@ -169,7 +169,7 @@ body{
 
     width:60px;
 
-    left:-100px;
+    left:110%;
     top:120px;
 
     z-index:3;
