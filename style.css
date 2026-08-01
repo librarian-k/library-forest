@@ -143,8 +143,7 @@ body{
 
 .cloud1{
 
-    top:10px;
-
+    top:-20px;
     left:-320px;
 
     width:120px;
@@ -204,8 +203,6 @@ body{
     z-index:3;
 
     pointer-events:none;
-
-    transform:scaleX(-1);
 
     animation:
     birdFly
