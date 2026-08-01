@@ -1,4 +1,37 @@
 /* ==========================
+   기본 설정
+========================== */
+
+body{
+
+    margin:0;
+    padding:0;
+
+    display:flex;
+    justify-content:center;
+
+    background:#f2f2f2;
+
+}
+
+#game{
+
+    position:relative;
+
+    width:530px;
+
+    overflow:hidden;
+
+}
+
+#background{
+
+    display:block;
+
+    width:100%;
+
+}
+/* ==========================
    Library Forest Animation
 ========================== */
 
