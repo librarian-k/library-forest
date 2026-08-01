@@ -30,7 +30,12 @@ body{
 
     width:100%;
 
+    position:relative;
+
+    z-index:2;
+
 }
+
 /* ==========================
    Library Forest Animation
 ========================== */
@@ -117,6 +122,8 @@ body{
 
     overflow:hidden;
 
+    z-index:1;
+
 }
 
 .cloud{
@@ -190,7 +197,7 @@ body{
 
     pointer-events:none;
 
-   transform:scaleX(-1);
+    transform:scaleX(-1);
 
     animation:
     birdFly
